@@ -1,0 +1,17 @@
+{
+  "name": "Remove Twitter Trending",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+    "16": "assets/16.png",
+    "48": "assets/48.png",
+    "128": "assets/128.png"
+  },
+  "description": "Turns off the Explore button and Trending tab on Twitter",
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["injector.js"]
+    }
+  ]
+}
